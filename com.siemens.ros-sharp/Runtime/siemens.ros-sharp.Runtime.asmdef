@@ -3,11 +3,10 @@
   "defineConstraints": [],
   "versionDefines": [],
   "allowUnsafeCode": false,
-  "overrideReferences": true,
+  "overrideReferences": false,
   "autoReferenced": true,
   "excludePlatforms": [],
   "precompiledReferences": [
-    "Newtonsoft.Json.dll",
     "websocket-sharp.dll",
     "System.Text.Json.dll",
     "System.Threading.Channels.dll",
@@ -15,7 +14,9 @@
     "System.IO.Pipelines.dll"
   ],
   "noEngineReferences": false,
-  "references": [],
+  "references": [
+    "Newtonsoft.Json"
+  ],
   "name": "siemens.ros-sharp.Runtime",
   "includePlatforms": []
 }
