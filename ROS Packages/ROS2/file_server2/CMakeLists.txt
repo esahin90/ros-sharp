@@ -9,6 +9,7 @@ endif()
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
@@ -32,6 +33,7 @@ add_executable(file_server2_node src/file_server.cpp)
 
 ament_target_dependencies(file_server2_node
   rclcpp
+  ament_index_cpp
   std_msgs
 )
 
