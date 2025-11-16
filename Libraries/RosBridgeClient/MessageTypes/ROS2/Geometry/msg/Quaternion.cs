@@ -26,7 +26,7 @@ namespace RosSharp.RosBridgeClient.MessageTypes.Geometry
             this.x = 0.0;
             this.y = 0.0;
             this.z = 0.0;
-            this.w = 0.0;
+            this.w = 1.0;
         }
 
         public Quaternion(double x, double y, double z, double w)
